@@ -1,2 +1,2 @@
 # 4K96.NET
-Communications made easy
+Open source communications protocol
