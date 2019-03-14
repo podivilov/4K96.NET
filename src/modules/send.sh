@@ -8,8 +8,8 @@ function _send() {
     else
       USERNAME="$1"
     fi
-    echo "Type your message above. Use the \"~\" symbol when done."
-    read -p "... " -d "~" MESSAGE
+    echo "Type your message above. Use the \".\" symbol when done."
+    read -p "... " -d "." MESSAGE
     echo -e "\\nSending message..."
     tx_bytes "QUERY SEND $USERNAME `echo \"$MESSAGE\" | base64 | tr -d '\040\011\012\015'` $DEFAULT_SUFFIX"
     RX=$(rx_bytes)
